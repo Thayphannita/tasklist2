@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/moeys_building"
+    android:padding="25dp"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+<ImageView
+    android:id="@+id/logo_moeys"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="50dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="45dp"
+    android:src="@drawable/moeys_logo" />
+
+<TextView
+    android:id="@+id/app_names_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/app_name"
+    android:textSize="25dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="25dp"
+    android:textColor="@color/colorWhite"
+    android:layout_below="@id/logo_moeys"
+    />
+
+<TextView
+    android:id="@+id/finance_depart_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="35dp"
+    android:layout_centerHorizontal="true"
+    android:text="@string/finance_department"
+    android:textColor="@color/colorWhite"
+    android:layout_below="@id/app_names_txt"/>
+<EditText
+    android:id="@+id/edt_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:textColorHint="@color/colorWhite"
+    android:hint="@string/username"
+    app:backgroundTint="@color/colorWhite"
+    android:layout_below="@id/finance_depart_txt"/>
+<EditText
+    android:id="@+id/pw_edt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:textColorHint="@color/colorWhite"
+    android:hint="@string/password"
+    android:inputType="textPassword"
+    app:backgroundTint="@color/colorWhite"
+    android:layout_below="@id/edt_username"/>
+
+<ImageButton
+    android:id="@+id/khmer_icon"
+    android:layout_width="95dp"
+    android:layout_height="60dp"
+    android:layout_below="@id/pw_edt"
+    android:scaleType="fitXY"
+    android:layout_marginLeft="70dp"
+    android:src="@drawable/khmerflage_icon" />
+
+<ImageButton
+    android:id="@+id/usa_icon"
+    android:layout_width="95dp"
+    android:layout_height="60dp"
+    android:layout_below="@id/pw_edt"
+    android:layout_centerInParent="true"
+    android:layout_toRightOf="@id/khmer_icon"
+    android:scaleType="fitXY"
+    android:adjustViewBounds="true"
+    android:layout_marginLeft="40dp"
+    android:src="@drawable/american_flag" />
+
+<TextView
+    android:id="@+id/khmer_txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/khmer_icon"
+    android:layout_marginLeft="100dp"
+    android:layout_marginTop="-8dp"
+    android:text="Khmer"
+    android:textColor="@color/colorWhite" />
+
+<TextView
+    android:id="@+id/usa_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/khmer_icon"
+    android:layout_marginLeft="89dp"
+    android:layout_marginTop="-8dp"
+    android:layout_toRightOf="@id/khmer_txt"
+    android:text="English"
+    android:textColor="@color/colorWhite" />
+
+<Button
+    android:id="@+id/bt_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlue"
+    android:text="@string/login"
+    android:layout_below="@id/khmer_txt"
+    android:layout_marginTop="50dp"
+    android:layout_centerInParent="true"
+    />
+
+</RelativeLayout>
